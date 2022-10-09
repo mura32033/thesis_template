@@ -1,0 +1,48 @@
+\documentclass[a4paper,titlepage]{jreport}
+\usepackage[utf8]{inputenc}
+\usepackage{b_thesis}
+
+%\include{lineheight}
+
+\begin{document}
+
+\include{titlepage}
+
+\pagenumbering{arabic} % 論文本体はArabicで表示
+\setcounter{page}{1} % ページ番号を1から振り直す
+\setcounter{secnumdepth}{3} % セクション番号を振る深さをsubsubまでに変更
+\setcounter{tocdepth}{1} % 目次に表示するセクションの深さをsectionまでに変更
+
+\include{thesis/abstract}
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+%\mojiparline{35} % 一行あたり文字数の指定. lineheight.texが必要.
+%\linesparpage{34} % 1ページあたり行数の指定. lineheight.texが必要.
+
+\include{thesis/introduction}
+
+\include{thesis/method}
+
+\include{thesis/result}
+
+\include{thesis/discussion}
+
+\include{thesis/conclusion}
+
+\include{thesis/acknowledgments}
+
+\newpage
+
+\bibliographystyle{unsrt}
+
+\bibliography{b_thesis.bib}
+
+\addtocontents{toc}{\protect\contentsline{chapter}{謝辞}{}}
+\addtocontents{toc}{\protect\contentsline{chapter}{\bibname}{}}
+
+\end{document}

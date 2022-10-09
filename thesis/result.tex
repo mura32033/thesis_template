@@ -1,0 +1,30 @@
+\chapter{結果}
+
+ここには論文の結果を記述します．
+
+\section{セクション}
+
+適宜sectionで分けます
+
+\begin{table}[htb]
+    \centering
+    \begin{threeparttable}[htb] \caption{表のサンプル} \label{tab:1}
+        \begin{tabular}{rrccc}
+            \toprule
+                    A & B & C & D & \(p\)値 \\
+                    \midrule
+                \multicolumn{5}{l}{\emph{AAA}} \\
+                A & X & X & X & .089 \\
+                B & X & X & X & .011\tnote{*} \\
+                \multicolumn{5}{l}{\emph{BBB}} \\
+                C & X & X & X & .555 \\
+                D & X & X & X & .085 \\
+            \bottomrule
+        \end{tabular}
+        \begin{tablenotes}
+            \item A:\;AAA
+            \item[*] \(p < .05\)
+            \item[**] \(p < .01\)
+        \end{tablenotes}
+    \end{threeparttable}
+\end{table}

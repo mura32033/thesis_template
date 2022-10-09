@@ -1,0 +1,20 @@
+\usepackage[dvipdfmx]{graphicx} % 図を挿入してくれる
+\usepackage{amsmath} % 方程式をきれいにしてくれる
+\usepackage{booktabs} % 表をきれいにしてくれる
+\usepackage{multirow} % 表の列と行をそれぞれ結合してきれいにしてくれる
+%\usepackage{enumerate} % 箇条書きでカスタム用語内で自動整番してくれる
+\usepackage{enumitem} % enumerateパッケージの進化版
+\usepackage{ascmac} % 枠付き文章を作ってくれる
+\usepackage{threeparttablex} % 表の下に注釈を入れてくれる
+\usepackage{acronym} % 略称を使い回す
+\usepackage{longtable} % 複数ページにまたがる表を作ってくれる
+\usepackage{url} % URLをきれいに表示してくれる
+
+\renewcommand{\bibname}{参考文献} % デフォルトが変な名前だから変える
+\newcommand{\strongp}{\(<.01\)} % p値が0.01以下のときに使う(p < .01を出力する)
+\newcommand{\longcomment}[1]{}
+
+\newcommand{\jpabbr}[3]{#1（#2;\;#3）} % \jpabbr{あいうえお}{AIEUO}{AEO}とするとあいうえお（AIEUO; AEO）と出力される
+\newcommand{\enabbr}[2]{{#1}（{#2}）} % \enabbr{Body Mass Index}{BMI}とするとBody Mass Index（BMI）と出力される
+
+\urlstyle{same} % 文書全体で適用中のフォントでURLも表示する
